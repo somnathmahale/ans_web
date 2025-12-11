@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>ANS Software Solutions</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="ans_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideOut {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+        }
+
+        .slide-enter {
+            animation: slideIn 0.8s ease-in-out;
+        }
+
+        .slide-exit {
+            animation: slideOut 0.8s ease-in-out;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #de660a 0%, #fbba89 100%);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #de660a 0%, #fbba89 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(45deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
+        }
+    </style>
+</head>
+
+
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav id="prxNav" class="prx-nav">
+        <div class="prx-nav-inner">
+            <div class="prx-left">
+                <!-- Brand: logo + name + tagline (replace existing brand HTML) -->
+                <a href="#home" class="prx-logo-link" aria-label="ANS home">
+                    <img src="images/ans-logo.png" alt="ANS Software Solutions" class="prx-logo">
+                    <div class="vertical-line">&nbsp;&nbsp;</div>
+                    <div class="prx-brand-vertical">
+                        <!--<div class="prx-brand">
+                            <div class="prx-name">ANS</div>
+                            <div class="prx-sub">SOFTWARE SOLUTIONS</div>
+                        </div>-->
+
+                        <div class="prx-tagline-small">Answer to all your IT
+                            questions.</div>
+                    </div>
+                </a>
+            </div>
+            <div class="prx-center" id="prxDesktopMenu">
+                <a href="#home" class="prx-link">Home</a>
+                <a href="#services" class="prx-link">Services</a>
+                <a href="#capabilities" class="prx-link">Capabilities</a>
+                <a href="#who-we-are" class="prx-link">About Us</a>
+                <a href="#contact" class="prx-cta">Get In Touch</a>
+            </div>
+            <div class="prx-right">
+                <button id="prxMobileBtn" class="prx-mobile-btn" aria-expanded="false" aria-controls="prxMobileMenu">
+                    ☰
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu (hidden by default) -->
+        <div id="prxMobileMenu" class="prx-mobile-menu" aria-hidden="true" style="display:none;">
+            <a href="#home" class="prx-mobile-item">Home</a>
+            <a href="#services" class="prx-mobile-item">Services</a>
+            <a href="#capabilities" class="prx-mobile-item">Capabilities</a>
+            <a href="#who-we-are" class="prx-mobile-item">About Us</a>
+            <a href="#contact" class="prx-mobile-cta">Get In Touch</a>
+        </div>
+        <div class="footer-gradient-bar"></div>
+    </nav>
+    <!-- Hero Section with Slider -->
+    <div class="carousel" id="home">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="images/carousel6.jpg">
+                <div class="content">
+                    <div class="author"></div>
+                    <div class="title"><!--DESIGN SLIDER 1--></div>
+                    <div class="topic"><br>Build What’s Next.</div>
+                    <div class="des"><br><br>
+                        "Product Development" — Transform your ideas into high-impact digital products. We design and
+                        engineer scalable
+                        solutions using modern technology to help you innovate with confidence. Bring your ideas to life
+                        through powerful digital products built on modern technology.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/carousel0.jpg">
+                <div class="content">
+                    <div class="author"></div>
+                    <div class="title"><!--DESIGN SLIDER 1--></div>
+                    <div class="topic"><br>Transform With Intelligent Innovation.</div>
+                    <div class="des"><br><br>
+                        <!-- lorem 50 -->
+                        "Digital Transformation & AI" - Harness advanced analytics, data-driven intelligence, and
+                        cutting-edge AI to accelerate growth.
+                        We help businesses reinvent processes, enhance customer experiences, and turn technology into a
+                        true competitive advantage.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/carousel5.jpg">
+                <div class="content">
+                    <div class="author"></div>
+                    <div class="title"><!--DESIGN SLIDER 1--></div>
+                    <div class="topic"><br>Turn Data Into Intelligence.</div>
+                    <div class="des"><br><br>
+                        <!-- lorem 50 -->
+                        "Data Engineering & Analytics" - We build scalable data ecosystems that unify your information
+                        landscape and unlock actionable
+                        insights. From pipelines to analytics, we enable smarter decisions across every business
+                        function.
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/carousel1.png">
+                <div class="content">
+                    <div class="author"></div>
+                    <div class="title"><!--DESIGN SLIDER 3--></div>
+                    <div class="topic"><br>Clarity That Drives Growth.</div>
+                    <div class="des"><br><br>
+                        "Business Consulting" — Leverage deep industry insight to navigate complexity and make smarter
+                        decisions. Our consulting
+                        services empower your business to achieve strategic outcomes with confidence. Make smarter
+                        decisions with strategic guidance rooted in real-world expertise.
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/carousel3.png">
+                <div class="content">
+                    <div class="author"></div>
+                    <div class="title"><!--DESIGN SLIDER 4--></div>
+                    <div class="topic"><br>Modernize for What’s Next.</div>
+                    <div class="des"><br><br>
+                        "Platform & Infrastructure Modernization" - Evolve with confidence as we migrate, modernize, and
+                        optimize your platforms for cloud-native
+                        growth. Achieve resilience, performance, and cost efficiency with a future-ready infrastructure.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/carousel8.jpg">
+                <div class="content">
+                    <div class="author"></div>
+                    <div class="title"><!--DESIGN SLIDER 4--></div>
+                    <div class="topic"><br>Your Team, Supercharged.</div>
+                    <div class="des"><br><br>
+                        "Managed Services" — Access top-tier engineering talent without the overhead. Extend your
+                        engineering capabilities
+                        with reliable, cost-optimized teams that deliver quality, speed, and cost
+                        efficiency—to scale smarter, not harder. Ensure business continuity with our
+                        support, keeping your operations running flawlessly.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dots"></div>
+        <!-- time running -->
+        <div class="time"></div>
+
+    </div>
+
+    <!-- Services Section -->
+
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Our <span class="gradient-text">Services</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    At ANS Software Solutions, we go beyond execution to engineer meaningful impact. Guided by a
+                    culture of of innovation, precision, and performance, we design solutions that deliver
+                    measurable value at every stage. Our comprehensive technology, cloud, data, and AI capabilities
+                    empower organizations to accelerate transformation, strengthen operational excellence, and unlock
+                    new opportunities for growth.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Service 1: Product Development -->
+                <div class="service-card bg-white/80 rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100">
+                    <div class="mb-6" style="display: flex; justify-content: center; align-items: center;">
+                        <svg class="w-12 h-12 sm:w-16 sm:h-16 mx-auto" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="devopsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="30" cy="30" r="12" fill="url(#devopsGrad)" />
+                            <circle cx="70" cy="30" r="12" fill="url(#devopsGrad)" />
+                            <circle cx="50" cy="70" r="12" fill="url(#devopsGrad)" />
+                            <path d="M30,30 L70,30 L50,70 Z" stroke="url(#devopsGrad)" stroke-width="3" fill="none">
+                                <animate attributeName="stroke-dasharray" values="0,200;200,0;0,200" dur="4s"
+                                    repeatCount="indefinite" />
+                            </path>
+                            <circle cx="50" cy="50" r="8" fill="url(#devopsGrad)">
+                                <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite" />
+                            </circle>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">Product
+                        Development</h3>
+                    <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+                        Bring your ideas to life through powerful digital products built on modern technology.
+                    </p>
+                </div>
+                <!-- Service 2: Application Development & System Integration -->
+                <div class="service-card bg-white/80 rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="mb-6" style="display: flex; justify-content: center; align-items: center;">
+                        <svg class="w-16 h-16 mx-auto" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="appGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#15cf9c;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#037154;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="20" y="20" width="60" height="40" fill="url(#appGrad)" rx="5" opacity="0.8" />
+                            <rect x="25" y="25" width="50" height="5" fill="white" rx="2" />
+                            <rect x="25" y="35" width="30" height="3" fill="white" rx="1" />
+                            <rect x="25" y="42" width="40" height="3" fill="white" rx="1" />
+                            <rect x="25" y="49" width="25" height="3" fill="white" rx="1" />
+                            <circle cx="70" cy="70" r="15" fill="url(#appGrad)" opacity="0.6">
+                                <animate attributeName="r" values="15;18;15" dur="3s" repeatCount="indefinite" />
+                            </circle>
+                            <path d="M65,70 L70,75 L75,65" stroke="white" stroke-width="2" fill="none" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">Application
+                        Development & System Integration</h3>
+                    <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+                        Custom application development and seamless system integration to streamline your business
+                        processes.
+                    </p>
+                </div>
+                <!-- Service 3: Data Engineering & Analytics -->
+                <div class="service-card bg-white/80 rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="mb-6" style="display: flex; justify-content: center; align-items: center;">
+                        <svg class="w-16 h-16 mx-auto" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#de660a;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="10" y="60" width="15" height="30" fill="url(#dataGrad)" rx="2">
+                                <animate attributeName="height" values="30;40;30" dur="2s" repeatCount="indefinite" />
+                            </rect>
+                            <rect x="30" y="45" width="15" height="45" fill="url(#dataGrad)" rx="2">
+                                <animate attributeName="height" values="45;55;45" dur="2.5s" repeatCount="indefinite" />
+                            </rect>
+                            <rect x="50" y="30" width="15" height="60" fill="url(#dataGrad)" rx="2">
+                                <animate attributeName="height" values="60;70;60" dur="3s" repeatCount="indefinite" />
+                            </rect>
+                            <rect x="70" y="40" width="15" height="50" fill="url(#dataGrad)" rx="2">
+                                <animate attributeName="height" values="50;60;50" dur="2.2s" repeatCount="indefinite" />
+                            </rect>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">Data Engineering
+                        & Analytics</h3>
+                    <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+                        Build robust data pipelines, implement advanced analytics, and create actionable insights from
+                        your data ecosystem.
+                    </p>
+                </div>
+                <!-- Service 4: Platform & Infrastructure Modernization -->
+                <div class="service-card bg-white/80 rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100">
+                    <div class="mb-6" style="display: flex; justify-content: center; align-items: center;">
+                        <svg class="w-12 h-12 sm:w-16 sm:h-16 mx-auto" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0891B2;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <ellipse cx="35" cy="45" rx="15" ry="10" fill="url(#cloudGrad)" opacity="0.8" />
+                            <ellipse cx="55" cy="40" rx="20" ry="12" fill="url(#cloudGrad)" opacity="0.9" />
+                            <ellipse cx="70" cy="50" rx="12" ry="8" fill="url(#cloudGrad)" opacity="0.7" />
+                            <ellipse cx="50" cy="55" rx="35" ry="15" fill="url(#cloudGrad)" />
+                            <circle cx="30" cy="25" r="2" fill="url(#cloudGrad)" opacity="0.6">
+                                <animateTransform attributeName="transform" type="translate" values="0,0;5,-5;0,0"
+                                    dur="3s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="70" cy="20" r="2" fill="url(#cloudGrad)" opacity="0.6">
+                                <animateTransform attributeName="transform" type="translate" values="0,0;-3,-3;0,0"
+                                    dur="4s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="80" cy="30" r="1.5" fill="url(#cloudGrad)" opacity="0.6">
+                                <animateTransform attributeName="transform" type="translate" values="0,0;-2,-4;0,0"
+                                    dur="3.5s" repeatCount="indefinite" />
+                            </circle>
+                        </svg>
+
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">Platform &
+                        Infrastructure Modernization</h3>
+                    <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+                        Transform legacy systems into modern, scalable, and efficient cloud platforms that drive
+                        business
+                        growth.
+                    </p>
+                </div>
+
+                <!-- Service 5: Business Consulting -->
+                <div class="service-card bg-white/80 rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100">
+                    <div class="mb-6" style="display: flex; justify-content: center; align-items: center;">
+                        <svg class="w-12 h-12 sm:w-16 sm:h-16 mx-auto" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="platformGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#a0e5f3;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0daece;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="15" y="70" width="70" height="20" fill="url(#platformGrad)" rx="3" />
+                            <rect x="25" y="50" width="50" height="15" fill="url(#platformGrad)" rx="2" opacity="0.8" />
+                            <rect x="35" y="30" width="30" height="15" fill="url(#platformGrad)" rx="2" opacity="0.6" />
+                            <circle cx="50" cy="15" r="8" fill="url(#platformGrad)">
+                                <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" />
+                            </circle>
+                            <path d="M50,23 L50,30" stroke="url(#platformGrad)" stroke-width="2" />
+                            <path d="M50,45 L50,50" stroke="url(#platformGrad)" stroke-width="2" />
+                            <path d="M50,65 L50,70" stroke="url(#platformGrad)" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">Business
+                        Consulting</h3>
+                    <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+                        Make smarter decisions with strategic guidance rooted in real-world expertise.
+                    </p>
+                </div>
+
+                <!-- Service 6: Managed Services -->
+                <div class="service-card bg-white/80 rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100">
+                    <div class="mb-6" style="display: flex; justify-content: center; align-items: center;">
+                        <svg class="w-12 h-12 sm:w-16 sm:h-16 mx-auto" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="devopsGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#0daece;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#023a46;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="30" cy="30" r="12" fill="url(#devopsGrad1)" />
+                            <circle cx="70" cy="30" r="12" fill="url(#devopsGrad1)" />
+                            <circle cx="50" cy="70" r="12" fill="url(#devopsGrad1)" />
+                            <path d="M30,30 L70,30 L50,70 Z" stroke="url(#devopsGrad1)" stroke-width="3" fill="none">
+                                <animate attributeName="stroke-dasharray" values="0,200;200,0;0,200" dur="4s"
+                                    repeatCount="indefinite" />
+                            </path>
+                            <circle cx="50" cy="50" r="8" fill="url(#devopsGrad1)">
+                                <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite" />
+                            </circle>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">Managed Services
+                    </h3>
+                    <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+                        Ensure business continuity with our reliable, cost-optimized engineering capabilities, support,
+                        keeping your operations running flawlessly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Capabilities Section -->
+    <section id="capabilities" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center lg:text-left mb-8">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Our <span class="gradient-text">Capabilities</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our capabilities span the full digital spectrum, empowering businesses across Banking, Financial
+                    Services, E-commerce, Aviation, and many other industries. From crafting sophisticated web and
+                    mobile experiences to engineering resilient databases and scalable cloud-native infrastructures, we
+                    deliver technology that performs under real-world demands. Our expertise extends to building modern
+                    data platforms and advanced analytics pipelines that transform raw information into actionable
+                    intelligence. Whether modernizing legacy systems or developing new digital products, we bring deep
+                    technical mastery and industry insight to every engagement.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="text-center px-4">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center">
+                        <img src="images/web.png" alt="Web">
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4">Web Development</h3>
+                    <p class="text-sm sm:text-base text-gray-600">Specialists in intricate web development and crafting
+                        cutting-edge web experiences. Delivering complex solutions that exceed expectations, turning
+                        critical challenges into elegant, high-performing solutions.</p>
+                </div>
+
+                <div class="text-center px-4">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center">
+                        <img src="images/mobile-image.png" alt="Web">
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4">Mobile (Android/iOS)
+                        Development</h3>
+                    <p class="text-sm sm:text-base text-gray-600">Crafting intuitive mobile experiences, delivering
+                        cutting-edge Android and iOS applications that captivate users and drive business growth. Let's
+                        bring your app ideas to life.</p>
+                </div>
+
+                <div class="text-center px-4">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center">
+                        <img src="images/database.png" alt="Web">
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4">Database & Migrations</h3>
+                    <p class="text-sm sm:text-base text-gray-600">Specialize in designing and implementing robust
+                        database solutions and scalable storage architectures to meet your critical data needs -
+                        ensuring data integrity, security, and optimal performance for your business.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="text-center px-4">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center">
+                        <img src="images/cloud.png" alt="Web">
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4">Cloud Engineering</h3>
+                    <p class="text-sm sm:text-base text-gray-600">Specialize in cloud engineering - Public/Private,
+                        helping businesses migrate, modernize, and innovate with scalable, secure, and cost-effective
+                        cloud-native solutions..</p>
+                </div>
+
+                <div class="text-center px-4">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center">
+                        <img src="images/data.png" alt="Web">
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4">Data Engineering</h3>
+                    <p class="text-sm sm:text-base text-gray-600">Excel in building reliable, scalable, and maintainable
+                        data solutions with advanced analytics that unlock the power of your data by leveraging
+                        cutting-edge technologies to extract meaningful and actionable insights.</p>
+                </div>
+
+                <div class="text-center px-4">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center">
+                        <img src="images/web.png" alt="DevOps">
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4">DevOps & Automation</h3>
+                    <p class="text-sm sm:text-base text-gray-600">Accelerate deployment cycles and improve reliability
+                        with advanced DevOps practices and automation.</p>
+                </div>
+            </div>
+
+            <!-- --- START grouped domain cards --- -->
+            <!--  Case Studies, grouped by domain -->
+            <h2 class="text-xl sm:text-xl md:text-xl lg:text-xl font-bold text-gray-900 mb-6">
+                Our <span class="gradient-text">Case Studies</span>
+            </h2>
+            <!-- BFSI -->
+            <div class="cap-domain border rounded-xl bg-white shadow-sm mb-6 overflow-hidden">
+
+                <!-- Header -->
+                <button
+                    class="cap-domain-header w-full flex justify-between items-center p-4 text-left bg-purple-50 hover:bg-purple-100 transition-all"
+                    aria-expanded="false">
+
+                    <span class="text-lg font-semibold text-gray-900">
+                        Banking & Financial Services
+                    </span>
+
+                    <svg class="chevron h-5 w-5 text-gray-600 transition-transform duration-300" fill="none"
+                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <!-- Collapsible Content -->
+                <div class="cap-domain-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-4 border-t bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <article class="rounded-2xl bg-white border border-gray-100 shadow-md p-6">
+                                <h4 class="text-lg font-semibold text-purple-700 mb-2">Enterprise Mutual Fund
+                                    Distribution
+                                    Platform Management</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">One of India's largest mutual fund
+                                    distribution platforms requires a dedicated, reliable development partner for
+                                    continuous
+                                    management, enhancement, and stability.
+                                </p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Secured the contract as the sole
+                                    development
+                                    partner responsible for the complete
+                                    management, ongoing enhancement, and comprehensive technical support of the
+                                    platform.</p>
+                                <p class="mt-4 font-semibold text-green-600">➜ Ensured platform uptime of 99.99% through
+                                    robust
+                                    support, establishing a trusted, long-term partnership.</p>
+                            </article>
+
+                            <article class="rounded-2xl bg-white border border-gray-100 shadow-md p-6">
+                                <h4 class="text-lg font-semibold text-purple-700 mb-2">Full-Stack Innovative Wealth
+                                    Management
+                                    Platform</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">BFSI client required a modern,
+                                    end-to-end
+                                    digital platform for managing wealth products, demanding native applications and
+                                    distinct
+                                    portals for clients and RMs.</p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Delivered comprehensive, multi-channel
+                                    solution
+                                    for Mutual
+                                    Funds, Stocks, and Bonds from scratch, including Client, RM, and Admin portals, plus
+                                    native
+                                    Android and iOS mobile apps, for a seamless user experience.</p>
+                                <p class="mt-4 font-semibold text-green-600">➜
+                                    Enables 20% faster client onboarding and establishes a platform for rapid asset
+                                    management
+                                    growth.</p>
+                            </article>
+                        </div><br>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <article class="rounded-2xl bg-white border border-gray-100 shadow-md p-6">
+                                <h4 class="text-lg font-semibold text-purple-700 mb-2">AIF (Alternative Investment
+                                    Fund)
+                                    Management Platform </h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">Managing AIF
+                                    products involves manual, complex processes for investor KYC, capital drawdowns,
+                                    and
+                                    generating accurate, timely statements of account.
+                                </p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Built a product to fully
+                                    manage AIF products, automating core functions like investor KYC, processing
+                                    capital
+                                    Drawdowns, and generating compliant Statements of Account.</p>
+                                <p class="mt-4 font-semibold text-green-600">➜ Reduced administrative workload by
+                                    60% by
+                                    automating complex AIF processes, significantly improving investor onboarding
+                                    speed by 40%
+                                    and ensuring regulatory compliance.</p>
+                            </article>
+                            <article class="rounded-2xl bg-white border border-gray-100 shadow-md p-6">
+                                <h4 class="text-lg font-semibold text-purple-700 mb-2">Crypto Price Ratio Alerting
+
+                                </h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">Developed a system for real-time price
+                                    monitoring, automated alerts, and daily reports on cryptocurrency price movements
+                                    and trading volumes. Enables customized tracking and analysis for informed trading
+                                    decisions.
+
+                                </p>
+
+                                <p class="mt-4 font-semibold text-green-600">➜ Real-time price tracking and analysis
+                                    <br> ➜ Automated alerts for critical price movements
+                                    <br> ➜ Flexible configuration to meet individual trading needs
+                                    <br> ➜ Daily reports for comprehensive market overview
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aviation -->
+            <div class="cap-domain border rounded-xl bg-white shadow-sm mb-6 overflow-hidden">
+
+                <!-- Header -->
+                <button
+                    class="cap-domain-header w-full flex justify-between items-center p-4 text-left bg-purple-50 hover:bg-purple-100 transition-all"
+                    aria-expanded="false">
+
+                    <span class="text-lg font-semibold text-gray-900">
+                        Aviation & Others
+                    </span>
+
+                    <svg class="chevron h-5 w-5 text-gray-600 transition-transform duration-300" fill="none"
+                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+
+                <!-- Collapsible Content -->
+                <div class="cap-domain-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-4 border-t bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <article class="rounded-2xl bg-white border border-gray-100 shadow-md p-6">
+                                <h4 class="text-lg font-semibold text-purple-700 mb-2">Cargo Sharing & Consolidation
+                                    Platform
+                                </h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">A US client required a custom,
+                                    high-performance
+                                    platform for cargo sharing and consolidation that could be rapidly built, launched,
+                                    and
+                                    continuously maintained by a dedicated partner.
+                                </p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Built a mission-critical logistics
+                                    platform,
+                                    enabling a specialized logistics service,
+                                    and proving our capability as a trusted long-term, full-lifecycle and core
+                                    technology
+                                    partner.
+                                </p>
+                                <p class="mt-4 font-semibold text-green-600">➜ Delivered the core technology enabling a
+                                    specialized logistics service, improving cargo consolidation efficiency by 30% and
+                                    proving
+                                    technical agility.
+                                </p>
+                            </article>
+
+                            <article class="rounded-2xl bg-white border border-gray-100 shadow-md p-6">
+                                <h4 class="text-lg font-semibold text-purple-700 mb-2">Custom Enterprise Resource
+                                    Planning (ERP)
+                                    for the Distillery Industry</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">The specialized Indian distillery
+                                    industry
+                                    needs a comprehensive ERP solution to manage production, inventory, regulatory
+                                    compliance,
+                                    and distribution unique to their sector.</p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Developing a complete, customized ERP
+                                    platform
+                                    specifically tailored to the unique regulatory and operational needs of the
+                                    distillery
+                                    industry in India.</p>
+                                <p class="mt-4 font-semibold text-green-600">➜ Provides a future foundation for
+                                    streamlined
+                                    operations, maximized compliance, and is projected to reduce administrative overhead
+                                    by 20%
+                                    upon launch.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--E-commerce & Advanced Analytics  -->
+            <div class="cap-domain border rounded-xl bg-white shadow-sm mb-6 overflow-hidden">
+
+                <!-- Header -->
+                <button
+                    class="cap-domain-header w-full flex justify-between items-center p-4 text-left bg-purple-50 hover:bg-purple-100 transition-all"
+                    aria-expanded="false">
+
+                    <span class="text-lg font-semibold text-gray-900">
+                        E-commerce - Data Engineering & Analytics
+                    </span>
+
+                    <svg class="chevron h-5 w-5 text-gray-600 transition-transform duration-300" fill="none"
+                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+
+                <!-- Collapsible Content -->
+                <div class="cap-domain-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-4 border-t bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <article class="rounded-2xl bg-white border border-gray-100 shadow-md p-6">
+                                <h4 class="text-lg font-semibold text-purple-700 mb-2">Cloud Data Platform for
+                                    Fashion Intelligence</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">E-commerce retailers need daily,
+                                    actionable
+                                    insights across pricing, inventory, and trends, but raw data is siloed in 500+ daily
+                                    XML
+                                    feeds requiring complex ingestion and analysis.</p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Built a scalable Cloud Data and
+                                    Analytics
+                                    solution to ingest, normalize, and process high-volume data feeds, generating
+                                    interactive
+                                    intelligence across Pricing, Assortment, and Inventory signals.</p>
+                                <p class="mt-4 font-semibold text-green-600">➜ Enabled to make dynamic pricing
+                                    adjustments, identify product white space, and benchmark competitor strategies to
+                                    secure a
+                                    stronger market position and higher margins.</p>
+                            </article>
+
+                            <article class="rounded-2xl bg-white border border-gray-100 shadow-md p-6">
+                                <h4 class="text-lg font-semibold text-purple-700 mb-2">Product & Catalog Depth
+                                    Intelligence</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">E-commerce retailers lack a scalable
+                                    system to
+                                    process huge chunks of data feeds to understand competitor product mix, catalog
+                                    depth,
+                                    emerging styles, market assortment and trend tracking.</p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Built a Data pipeline to ingest,
+                                    transform, and process high-volume product XML data to derive Category Mix, SKU
+                                    Depth, New
+                                    Arrivals, and core Trend & Style insights.</p>
+                                <p class="mt-4 font-semibold text-green-600">➜ Insights for Trend
+                                    Spotting and White Space Analysis, improving data processing efficiency by 85% and
+                                    reducing
+                                    manual data compilation time.</p>
+                            </article>
+
+                            <article class="rounded-2xl bg-white border border-gray-100 shadow-md p-6">
+                                <h4 class="text-lg font-semibold text-purple-700 mb-2">Dynamic Pricing & Consumer
+                                    Demand Dashboard</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">Retailers need dynamic, real-time
+                                    insights into
+                                    competitor pricing, inventory health, and consumer response signals to maximize
+                                    margins and
+                                    manage stock effectively. </p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Developed a strategic analytics layer
+                                    to
+                                    process product data, generating signals for Pricing & Discount strategies,
+                                    Inventory &
+                                    Stock health, and Consumer Demand & Positioning.</p>
+                                <p class="mt-4 font-semibold text-green-600">➜ Empowered management to make dynamic
+                                    pricing
+                                    adjustments, potentially boosting margins by 5-10%, and optimizing inventory
+                                    turnover by
+                                    12%.</p>
+                            </article>
+
+                            <article class="rounded-2xl bg-white border border-gray-100 shadow-md p-6">
+                                <h4 class="text-lg font-semibold text-purple-700 mb-2">AI-Native Unified Data Format
+                                    (Patent
+                                    Published)</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">Modern AI systems suffer from high
+                                    cost,
+                                    latency, and consistency issues because streaming, batch, and AI vector data are
+                                    fractured
+                                    across separate storage systems.</p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Developed a prototype file format
+                                    that unifies streaming row-logs, columnar analytics blocks, and AI
+                                    vectors/embeddings into a
+                                    single artifact, as a next-generation file format solving data fracturing in AI
+                                    workflows.
+                                </p>
+                                <p class="mt-4 font-semibold text-green-600">➜ Aims to reduce pipeline complexity by 60%
+                                    and
+                                    provides low-latency, single-source access critical for real-time AI applications.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --- END grouped domain cards --- -->
+            <!-- Local-icons Tech Marquee (uses /icons/<file>.svg) -->
+            <div id="prx-tech-marquee" class="tech-icons-marquee-wrap" aria-hidden="false"></div>
+
+            <script>
+                /*
+                  Local-icons marquee builder.
+                  - Put your SVG files into /icons/ (site root), e.g. /icons/react.svg
+                  - Edit ICON_FILES below to list the filenames (without path) you want displayed, e.g. ["react.svg","aws.svg",...]
+                */
+                (function () {
+                    // === EDIT THIS LIST TO MATCH YOUR /icons/ FOLDER ===
+                    const ICON_FILES = [
+                        "React.svg", "NodeJS.svg", "Python.svg", "n8n.svg", "AWS.svg", "Dbt.svg", "AngularJS.svg", "Jupyter.svg", "GoogleCloud.svg", "Airflow.svg", "PostgreSQL.svg", "Docker.svg",
+                        "Terraform.svg", "Kafka.svg", "Kubernetes.svg", "SpringBoot.svg", "MySQL.svg", "MongoDB.svg",
+                        "TensorFlow.svg", "Redis.svg", "Elastic.svg", "Elasticsearch.svg",
+                        "Oracle.svg", "RabbitMQ.svg", "php-Laravel-mv.svg", "Kong.svg", "Stripe.svg",
+                        "Ruby.svg", "Rails.svg", "PHP.svg"
+                    ];
+                    // ===================================================
+
+                    const container = document.getElementById('prx-tech-marquee');
+                    if (!container) return;
+
+                    function buildTrackFragment() {
+                        const frag = document.createDocumentFragment();
+                        ICON_FILES.forEach(name => {
+                            const key = name.replace(/\.[^.]+$/, ''); // strip extension for label
+                            const item = document.createElement('div');
+                            item.className = 'tech-item';
+                            const img = document.createElement('img');
+                            img.src = 'icons/' + name;
+                            img.alt = key;
+                            img.loading = 'lazy';
+                            const label = document.createElement('div');
+                            label.className = 'tech-label';
+                            label.textContent = key;
+                            item.appendChild(img);
+                            item.appendChild(label);
+                            frag.appendChild(item);
+                        });
+                        return frag;
+                    }
+
+                    // marquee container with two tracks for seamless looping
+                    const marqueeOuter = document.createElement('div');
+                    marqueeOuter.className = 'tech-icons-marquee';
+
+                    const track1 = document.createElement('div');
+                    track1.className = 'marquee-track';
+                    track1.appendChild(buildTrackFragment());
+
+                    const track2 = document.createElement('div');
+                    track2.className = 'marquee-track';
+                    track2.appendChild(buildTrackFragment());
+
+                    marqueeOuter.appendChild(track1);
+                    marqueeOuter.appendChild(track2);
+
+                    // manual scroller (useful for small screens and accessibility)
+                    const manual = document.createElement('div');
+                    manual.className = 'tech-icons-scroller-manual';
+                    ICON_FILES.forEach(name => {
+                        const key = name.replace(/\.[^.]+$/, '');
+                        const a = document.createElement('a');
+                        a.className = 'tech-icon-item';
+                        a.href = '/icons/' + name;
+                        a.download = '';
+                        const img = document.createElement('img');
+                        img.src = '/icons/' + name;
+                        img.alt = key;
+                        img.loading = 'lazy';
+                        const label = document.createElement('div');
+                        label.className = 'icon-label';
+                        label.textContent = key;
+                        a.appendChild(img);
+                        a.appendChild(label);
+                        manual.appendChild(a);
+                    });
+
+                    // assemble
+                    container.appendChild(marqueeOuter);
+                    container.appendChild(manual);
+
+                    // pause behavior for hover/focus
+                    function setPaused(isPaused) {
+                        if (isPaused) marqueeOuter.classList.add('paused');
+                        else marqueeOuter.classList.remove('paused');
+                    }
+                    marqueeOuter.addEventListener('mouseenter', () => setPaused(true));
+                    marqueeOuter.addEventListener('mouseleave', () => setPaused(false));
+                    marqueeOuter.addEventListener('focusin', () => setPaused(true));
+                    marqueeOuter.addEventListener('focusout', () => setPaused(false));
+
+                })();
+            </script>
+            <!-- small CTA -->
+            <div class="text-center mt-10" style="height: 10px;">
+
+            </div>
+            <div class="text-center mt-10">
+                <a href="#contact" class="prx-cta">Talk to Us About a Case Study</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section id="who-we-are" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="px-4 lg:px-0">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                        Who <span class="gradient-text">We Are</span>
+                    </h2>
+                    <p class="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
+
+                        ANS Software Solutions is a next-generation startup helping enterprises modernize, scale, and
+                        transform through intelligence-led solutions. Since our founding in February 2022 in Pune,
+                        India, we’ve consistently delivered impactful, profitable results. Our journey began with
+                        building a comprehensive mutual fund transaction and portfolio platform for one of India’s
+                        largest stock exchanges, empowering thousands of distributors. Today, our team of passionate
+                        engineers and consultants blends deep industry expertise with engineering excellence to solve
+                        complex challenges across domains.
+                    </p>
+                    <p class="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
+                        Our mission is to democratize digital transformation by making advanced technologies accessible,
+                        actionable, and effective for businesses of all sizes. As your strategic technology partner, we
+                        co-create solutions that accelerate growth and deliver measurable impact.
+                    </p>
+                    </p>
+                    At ANS
+                    Software Solutions, we don’t just implement technology—we help shape the future of your digital
+                    journey.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 sm:gap-6">
+                        <div class="text-center">
+                            <div class="text-2xl sm:text-3xl font-bold text-purple-600 mb-2">20+</div>
+                            <div class="text-sm sm:text-base text-gray-600">Projects</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl sm:text-3xl font-bold text-purple-600 mb-2">10+</div>
+                            <div class="text-sm sm:text-base text-gray-600">Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br text-center  from-purple-600 to-blue-600 rounded-2xl p-8 text-white ">
+                        <img src="images/chat.png" alt="Expert Team" width="450px" height="350px"
+                            style="border-radius: 16px;">
+                        <div class="text-center mt-4">
+                            <p class="text-purple-100">Collaborative professionals working together to deliver
+                                excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section id="what-we-do" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    What <span class="gradient-text">We Do</span>
+                </h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
+                    We empower organizations to transform, innovate, and scale with confidence. Our work spans
+                    intelligent product engineering, web development, advanced data and AI capabilities, and
+                    cloud-driven digital
+                    transformation. By unifying technology, insight, and industry experience, we help businesses
+                    streamline operations, uncover opportunities, and accelerate growth. Whether modernizing legacy
+                    systems or building next-generation platforms, we deliver solutions that create lasting value.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="text-center px-4">
+                    <div
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 orange-500 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4">Products & Services</h3>
+                    <p class="text-sm sm:text-base text-gray-600">Streamline complex systems into unified,
+                        high-performing applications that deliver clear operational insight and enable smarter, faster
+                        decision-making across your organization.</p>
+                </div>
+
+                <div class="text-center px-4">
+                    <div
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 green-500 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 sm:w-8 sm:h-10 text-white" fill="currentColor" viewBox="0 0 22 22">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4">Data & AI Solutions</h3>
+                    <p class="text-sm sm:text-base text-gray-600">Harness AI-driven automation and predictive
+                        intelligence to improve efficiency, reduce operational friction, and uncover new avenues for
+                        growth.</p>
+                </div>
+
+                <div class="text-center px-4">
+                    <div
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 blue-500 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4">Digital Transformation</h3>
+                    <p class="text-sm sm:text-base text-gray-600">Reinvent your systems and workflows with modern
+                        technology that drives agility, efficiency, and long-term competitiveness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Do Section -->
+    <section id="how-we-do" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    How <span class="gradient-text">We Do</span>
+                </h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
+
+                    At ANS Software Solutions, we believe exceptional outcomes come from a structured yet agile way of
+                    working. Our approach blends deep discovery, purposeful design, and iterative engineering to ensure
+                    every solution aligns with your strategic goals. We build with integrity, innovate with intention,
+                    and deliver with reliability—supporting you long after launch through a trusted, long-term
+                    partnership.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="text-center relative px-4">
+                    <div
+                        class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-6 orange-500 rounded-full flex items-center justify-center text-white text-lg sm:text-2xl font-bold">
+                        1</div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-4">Discover & Define</h3>
+                    <strong>Integrity in
+                        Action</strong>
+                    <p class="text-sm sm:text-base text-gray-600">We begin by diving deep into your business needs,
+                        technical landscape, and long-term objectives. Through collaborative workshops and detailed
+                        analysis, we uncover opportunities, constraints, and the right problem to solve.</p>
+                    <div
+                        class="hidden lg:block absolute top-6 sm:top-8 -right-4 w-8 h-0.5 bg-gradient-to-r from-purple-600 to-transparent">
+                    </div>
+                </div>
+
+                <div class="text-center relative px-4">
+                    <div
+                        class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-6 green-500 rounded-full flex items-center justify-center text-white text-lg sm:text-2xl font-bold">
+                        2</div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-4">Design the Blueprint</h3>
+                    <strong>Innovation with Purpose</strong>
+                    <p class="text-sm sm:text-base text-gray-600">We craft a clear, value-driven roadmap that aligns
+                        architecture, cloud strategy, and delivery milestones. Every plan is grounded in measurable
+                        outcomes and built to adapt as priorities evolve.</p>
+                    <div
+                        class="hidden lg:block absolute top-6 sm:top-8 -right-4 w-8 h-0.5 bg-gradient-to-r from-purple-600 to-transparent">
+                    </div>
+                </div>
+
+                <div class="text-center relative px-4">
+                    <div
+                        class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-6 blue-500 rounded-full flex items-center justify-center text-white text-lg sm:text-2xl font-bold">
+                        3</div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-4">Build & Iterate</h3>
+                    <strong>Reliability
+                        at Scale</strong>
+                    <p class="text-sm sm:text-base text-gray-600">Using agile engineering practices, we design, build,
+                        and integrate solutions iteratively. Frequent checkpoints, continuous feedback, and transparent
+                        communication ensure quality, velocity, and real business impact at every sprint.</p>
+                    <div
+                        class="hidden lg:block absolute top-6 sm:top-8 -right-4 w-8 h-0.5 bg-gradient-to-r from-purple-600 to-transparent">
+                    </div>
+                </div>
+
+                <div class="text-center px-4">
+                    <div
+                        class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center text-white text-lg sm:text-2xl font-bold">
+                        4</div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-4">Optimize & Evolve</h3>
+                    <strong>Partnership Built on Trust</strong>
+                    <p class="text-sm sm:text-base text-gray-600">Our work continues beyond launch. We provide ongoing
+                        support, performance monitoring, and proactive optimization—ensuring your solution evolves with
+                        your business and continues to deliver lasting value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials (manual carousel: Prev/Next arrows, no auto, no dots) -->
+    <section id="client-testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Client <span class="gradient-text">Testimonials</span>
+                </h2>
+                <p class="section-subtitle">
+                    The success stories of our clients speak to the quality of our work and the depth of our commitment.
+                    Explore how ANS Software Solutions has helped organizations achieve meaningful results.
+                </p>
+            </div>
+            <!-- Client Logos — Auto Horizontal Marquee (no arrows) -->
+            <section id="client-logos-marquee" class="py-6 bg-transparent">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="logos-marquee-wrap" aria-hidden="false">
+
+                        <!-- Marquee: two identical tracks for seamless loop -->
+                        <div class="logos-marquee" tabindex="0" aria-label="Client logos marquee">
+                            <div class="marquee-track">
+                                <div class="logo-item"><img src="images/star_MF_logo.png" alt="BSE"></div>
+                                <div class="logo-item"><img src="images/kls-adv-logo.png" alt="KLS Adv"></div>
+                                <div class="logo-item"><img src="images/bse_startmf.png" alt="BSE"></div>
+                                <div class="logo-item"><img src="images/epmon-logo.png" alt="Epsilon Money"></div>
+                                <div class="logo-item"><img src="images/charter_share_logo.png" alt="Charter"></div>
+                                <div class="logo-item"><img src="images/crypto_Price_logo.png" alt="Crypto Price"></div>
+                                <div class="logo-item"><img src="images/star_MF_logo.png" alt="BSE"></div>
+                                <div class="logo-item"><img src="images/kls-adv-logo.png" alt="KLS Adv"></div>
+                                <div class="logo-item"><img src="images/bse_startmf.png" alt="BSE"></div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <div class="testimonial-carousel relative overflow-visible" id="testimonialCarousel">
+                <!-- Prev -->
+                <button class="testimonial-nav left" id="testimonialPrev" aria-label="Previous testimonial">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+
+                <!-- Viewport -->
+                <div class="testimonial-viewport overflow-hidden">
+                    <div class="testimonial-track flex gap-6 transition-transform duration-500 ease-out"
+                        id="testimonialTrack">
+                        <!-- Card 1 -->
+                        <div class="testimonial-card bg-white shadow-md rounded-2xl p-6 min-w-[320px] max-w-md">
+                            <div class="testimonial-header flex items-center mb-4">
+                                <img src="images/client1.png" alt="John K"
+                                    class="client-photo w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h4 class="client-name text-lg font-semibold text-gray-900">John K.</h4>
+                                    <span class="client-role text-sm text-gray-500">Co-founder, XianV Technologies
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-gray-700 text-sm leading-relaxed">
+                                "ANS helped us build a solid intelligence platform for product depth and
+                                dynamic pricing. Their data-driven approach gives us sharper market insights and
+                                real-time decision power."
+                            </p>
+                            <div class="rating mt-4 text-purple-300">★★★★★</div>
+                        </div>
+
+                        <!-- Card 2 -->
+
+                        <div class="testimonial-card bg-white shadow-md rounded-2xl p-6 min-w-[320px] max-w-md">
+                            <div class="testimonial-header flex items-center mb-4">
+                                <img src="images/client1.png" alt="Clive"
+                                    class="client-photo w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h4 class="client-name text-lg font-semibold text-gray-900">Clive J.</h4>
+                                    <span class="client-role text-sm text-gray-500">Founder, Ivan Technologies
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-gray-700 text-sm leading-relaxed">
+                                "ANS is our indispensable partner for transforming complex financial solutions
+                                into market-ready realities, delivers the technical
+                                depth, security, and scalability required to drive innovation in
+                                our business."
+                            </p>
+                            <div class="rating mt-4 text-purple-300">★★★★★</div>
+                        </div>
+                        <div class="testimonial-card bg-white shadow-md rounded-2xl p-6 min-w-[320px] max-w-md">
+                            <div class="testimonial-header flex items-center mb-4">
+                                <img src="images/client1.png" alt="Mark"
+                                    class="client-photo w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h4 class="client-name text-lg font-semibold text-gray-900">Mark D. </h4>
+                                    <span class="client-role text-sm text-gray-500">SSD Solutions, Founder & CEO</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-gray-700 text-sm leading-relaxed">
+                                “ANS helped us modernize our infrastructure and cloud setup, enabling us to scale
+                                securely. Team brought the right mix of technical depth and agility to make our platform
+                                faster, more reliable, and future-ready.”
+                            </p>
+                            <div class="rating mt-4 text-purple-300">★★★★★</div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="testimonial-card bg-white shadow-md rounded-2xl p-6 min-w-[320px] max-w-md">
+                            <div class="testimonial-header flex items-center mb-4">
+                                <img src="images/client1.png" alt="Li" class="client-photo w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h4 class="client-name text-lg font-semibold text-gray-900">Li Ray</h4>
+                                    <span class="client-role text-sm text-gray-500">Founder & Chief Faculty, Xtech
+                                        Academy</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-gray-700 text-sm leading-relaxed">
+                                "Partnered with ANS to bring our vision of an online learning platform for
+                                radiologists to life. They built a scalable, cost-effective web and mobile solution that
+                                supports global course delivery, secure exams, seamless payments, and certified
+                                learning."
+                            </p>
+                            <div class="rating mt-4 text-purple-300">★★★★★</div>
+                        </div>
+
+
+
+
+                    </div> <!-- /testimonial-track -->
+                </div> <!-- /testimonial-viewport -->
+
+                <!-- Next -->
+                <button class="testimonial-nav right" id="testimonialNext" aria-label="Next testimonial">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">Get In Touch!
+                </h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-200 mb-4 leading-relaxed px-4 sm:px-0">
+                    We'd love to hear from you. Whether you're interested in a partnership, a new project, or just
+                    exploring an idea, our team is here to help you get started.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                <!-- Contact Info -->
+                <div class="text-white px-4 lg:px-0">
+                    <!--<h3 class="text-xl sm:text-2xl font-bold mb-6">Ready to transform your data, applications, and
+                        infrastructure into a <strong>Rhythm</strong> of growth?</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-6">Get in Touch</h3>-->
+                    <p class="text-base sm:text-lg text-gray-200 mb-8 leading-relaxed">
+                        We welcome your inquiries! Reach out today—we look forward to connecting and typically respond
+                        to all project inquiries within 24 hours.
+                    </p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                            <span>info@anssoft.in</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span>A-16, Vanashri Apartment,
+
+                                Bavdhan, Pune - 411021</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                            </svg>
+                            <span>(+91) 84830 82810</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div
+                    class="bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-6 md:p-8 border border-white/20 mx-4 lg:mx-0">
+                    <form id="contactForm" class="space-y-4 sm:space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-white mb-2">Name *</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-sm sm:text-base"
+                                    placeholder="Full Name">
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-white mb-2">Company *</label>
+                                <input type="text" id="company" name="company" required
+                                    class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-sm sm:text-base"
+                                    placeholder="Organization Name">
+                            </div>
+                            <!--<div>
+                                <label for="fullName" class="block text-sm font-medium text-white mb-2">Full Name
+                                    *</label>
+                                <input type="text" id="fullName" name="fullName" required
+                                    class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
+                                    placeholder="Full Name">
+                            </div>-->
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-white mb-2">Email *</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-sm sm:text-base"
+                                    placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label for="businessEmail" class="block text-sm font-medium text-white mb-2">Business
+                                    Email *</label>
+                                <input type="email" id="businessEmail" name="businessEmail" required
+                                    class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-sm sm:text-base"
+                                    placeholder="business@company.com">
+                                <div id="businessEmailError" class="text-gray-900 text-sm mt-1 hidden">Please enter a
+                                    valid business email address</div>
+                            </div>
+                        </div>
+
+                        <!--<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-white mb-2">Company *</label>
+                                <input type="text" id="company" name="company" required
+                                    class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-sm sm:text-base"
+                                    placeholder="Company Name">
+                            </div>
+                            <div>
+                                <label for="organization" class="block text-sm font-medium text-white mb-2">Organization
+                                    Name</label>
+                                <input type="text" id="organization" name="organization"
+                                    class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-sm sm:text-base"
+                                    placeholder="Organization Name">
+                            </div>
+                        </div>-->
+
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-white mb-2">Subject *</label>
+                            <select id="subject" name="subject" required
+                                class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-sm sm:text-base">
+                                <option value="" class="text-gray-900">Select a subject</option>
+                                <option value="General Inquiry" class="text-gray-900">General Inquiry</option>
+                                <option value="Partnership" class="text-gray-900">Partnership</option>
+                                <option value="Project Discussion" class="text-gray-900">Project Discussion</option>
+                                <option value="Support" class="text-gray-900">Support</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-white mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-sm sm:text-base resize-none"
+                                placeholder="Tell us about your project, challenge, or partnership idea..."></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-white text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+                            Send Message
+                        </button>
+                        <div id="formMessage" class="text-center text-white hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer section-->
+    <section>
+        <!-- Footer -->
+        <div class="footer-gradient-bar"></div>
+
+        <footer id="prx-footer" class="prx-footer bg-gray-900 text-gray-300">
+            <div class="max-w-7xl mx-auto px-6 py-12">
+                <div class="prx-footer-flex">
+                    <!-- Column 1: Brand -->
+                    <div>
+                        <a href="#home" class="prx-logo-footer" aria-label="ANS home">
+                            <img src="images/ans-logo.png" alt="ANS logo" class="prx-logo-footer"></a>
+                    </div>
+                    <!-- Column 2: Quick Links -->
+                    <div class="flex justify-center items-center gap-8 text-sm text-gray-400 pt-8">
+                        <a href="#"
+                            class="hover:text-purple-500 hover:text-white transition-colors text-gray-400">Privacy
+                        </a>
+                        <a href="#" class="hover:text-purple-500 hover:text-white transition-colors text-gray-400">Terms
+                        </a>
+                        <a href="mailto:info@anssoft.in"
+                            class="hover:text-purple-500 hover:text-white transition-colors text-gray-400">
+                            info@anssoft.in
+                        </a>
+                    </div>
+                    <!-- Column 3: Social -->
+                    <div class="prx-footer-social pt-7">
+                        <div class="prx-socials">
+                            <!-- LinkedIn -->
+                            <a href="#" target="_blank" aria-label="LinkedIn" class="prx-social">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="prx-social-icon">
+                                    <path
+                                        d="M19 0h-14a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5v-14a5 5 0 0 0-5-5zm-11 19h-3v-10h3v10zm-1.5-11.5a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5zm13.5 11.5h-3v-5.5c0-1.3-.03-3-1.83-3-1.83 0-2.12 1.43-2.12 2.91v5.59h-3v-10h2.88v1.36h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v5.61z" />
+                                </svg>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="#" target="_blank" aria-label="Instagram" class="prx-social">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="prx-social-icon">
+                                    <path
+                                        d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.3.4.6.2 1 .4 1.5.9.5.5.7.9.9 1.5.2.4.3 1 .4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.3-.2.6-.4 1-.9 1.5-.5.5-.9.7-1.5.9-.4.2-1 .3-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.4-1.5-.9-.5-.5-.7-.9-.9-1.5-.2-.4-.3-1-.4-2.3-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.3.2-.6.4-1 .9-1.5.5-.5.9-.7 1.5-.9.4-.2 1-.3 2.3-.4 1.3-.1 1.7-.1 4.9-.1zm0 1.8c-3.1 0-3.4 0-4.7.1-1.1.1-1.7.2-2 .3-.5.1-.8.3-1.1.6-.3.3-.5.6-.6 1.1-.1.3-.3.9-.3 2-.1 1.3-.1 1.6-.1 4.7s0 3.4.1 4.7c.1 1.1.2 1.7.3 2 .1.5.3.8.6 1.1.3.3.6.5 1.1.6.3.1.9.3 2 .3 1.3.1 1.6.1 4.7.1s3.4 0 4.7-.1c1.1-.1 1.7-.2 2-.3.5-.1.8-.3 1.1-.6.3-.3.5-.6.6-1.1.1-.3.3-.9.3-2 .1-1.3.1-1.6.1-4.7s0-3.4-.1-4.7c-.1-1.1-.2-1.7-.3-2-.1-.5-.3-.8-.6-1.1-.3-.3-.6-.5-1.1-.6-.3-.1-.9-.3-2-.3-1.3-.1-1.6-.1-4.7-.1zm0 3.4a6.4 6.4 0 1 1 0 12.8 6.4 6.4 0 0 1 0-12.8zm0 10.6a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4zm5.2-10.9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                </svg>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="#" target="_blank" aria-label="Facebook" class="prx-social">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="prx-social-icon">
+                                    <path
+                                        d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5v-2.2c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6v1.8H17l-.4 2.9h-2.9v7A10 10 0 0 0 22 12" />
+                                </svg>
+                            </a>
+
+                            <!-- X -->
+                            <a href="#" target="_blank" aria-label="X" class="prx-social">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" fill="currentColor"
+                                    class="prx-social-icon">
+                                    <path d="M714.163 519.284L1160.89 0H1055.03L667.137 
+    450.887L356.417 0H0L463.313 681.821L0 1226.37H105.866L516.684 
+    752.218L843.583 1226.37H1200L714.137 519.284H714.163ZM572.783 
+    687.828L522.615 615.598L144.011 79.73H305.666L602.677 
+    505.501L652.845 577.731L1058.68 1150.27H897.026L572.783 
+    687.828Z" />
+                                </svg>
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800 text-gray-500 text-sm">
+                    © 2025 ANS Software Solutions. All rights reserved.
+                </div>
+
+            </div>
+        </footer>
+
+    </section>
+
+    <!-- Footer
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="prx-name-footer">
+                   ANS Software Solutions
+                </div>
+                <p class="text-gray-400 mb-8">Transforming businesses through scalable and reliable Data & AI solutions
+                </p>
+                <div class="flex justify-center space-x-8 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white transition-colors text-gray-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors text-gray-400">Terms of Service</a>
+                    <a href="#contact" class="hover:text-white transition-colors text-gray-400">Contact Us</a>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800 text-gray-500 text-sm">
+                    © 2025ANS Software Solutions. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/95');
+                nav.classList.remove('bg-white/90');
+            } else {
+                nav.classList.add('bg-white/90');
+                nav.classList.remove('bg-white/95');
+            }
+        });
+
+
+        // Business email validation
+        function validateBusinessEmail(email) {
+            const businessDomains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com', 'icloud.com'];
+            const domain = email.split('@')[1];
+            return domain && !businessDomains.includes(domain.toLowerCase());
+        }
+
+        // Contact form handling
+        // Contact form handling (AJAX -> /send_mail.php)
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const form = this;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const msgEl = document.getElementById('formMessage');
+
+            // client-side business email validation (reuse your function if present)
+            const businessEmail = form.querySelector('[name="businessEmail"]').value || '';
+            if (!validateBusinessEmail?.(businessEmail) && typeof validateBusinessEmail === 'function') {
+                document.getElementById('businessEmailError').classList.remove('hidden');
+                return;
+            } else {
+                document.getElementById('businessEmailError').classList.add('hidden');
+            }
+
+            submitBtn.disabled = true;
+            const origText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            msgEl.classList.remove('hidden');
+            msgEl.textContent = '';
+
+            const data = new FormData(form);
+
+            try {
+                const res = await fetch('/send_mail.php', {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+                const text = await res.text();
+                let json = null;
+                try { json = JSON.parse(text); } catch (e) { json = null; }
+
+                if (res.ok && json && json.success) {
+                    msgEl.style.color = '#027227';
+                    msgEl.innerHTML = '<strong>Message sent.</strong> We will reply within 24 hours.';
+                    form.reset();
+                } else {
+                    const err = (json && json.error) ? json.error : text || 'Unknown error';
+                    msgEl.style.color = '#e04705';
+                    msgEl.textContent = 'Error: ' + err;
+                }
+            } catch (err) {
+                msgEl.style.color = '#e04705';
+                msgEl.textContent = 'Network error — please try again later.';
+                console.error(err);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = origText;
+                // auto-hide after 7s
+                setTimeout(() => msgEl.classList.add('hidden'), 7000);
+            }
+        });
+
+        // small helper to avoid XSS when inserting server error text
+        function escapeHtml(unsafe) {
+            return (unsafe || '').replace(/[&<"'>]/g, function (m) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]); });
+        }
+
+        // Real-time business email validation
+        document.getElementById('businessEmail').addEventListener('input', function () {
+            const businessEmailError = document.getElementById('businessEmailError');
+            if (this.value && !validateBusinessEmail(this.value)) {
+                businessEmailError.classList.remove('hidden');
+            } else {
+                businessEmailError.classList.add('hidden');
+            }
+        });
+    </script>
+    <script src="app.js"></script>
+    <!-- WhatsApp Floating Button + Dialog -->
+    <a href="#" id="whatsappFloat" class="whatsapp-float" aria-label="Chat on WhatsApp" role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24">
+            <path
+                d="M12 2C6.486 2 2 6.289 2 11.661c0 2.092.693 4.04 1.979 5.708L2 22l4.823-1.64C8.403 21.238 10.17 22 12 22c5.514 0 10-4.289 10-9.661C22 6.289 17.514 2 12 2zm5.293 14.332c-.221.624-1.285 1.187-1.777 1.26-.493.073-1.107.104-1.792-.112-.413-.13-.942-.304-1.621-.599-2.848-1.234-4.692-4.106-4.833-4.297-.142-.19-1.153-1.536-1.153-2.929 0-1.393.728-2.081.986-2.362.258-.28.566-.35.755-.35.189 0 .378.002.543.01.176.008.408-.066.638.487.221.537.75 1.853.817 1.987.067.134.112.288.02.46-.09.171-.135.278-.27.43-.135.152-.284.34-.405.457-.135.134-.276.28-.119.548.157.269.698 1.154 1.5 1.867 1.03.917 1.898 1.205 2.168 1.339.27.134.423.112.578-.067.154-.18.668-.78.847-1.047.18-.267.358-.223.597-.134.239.089 1.511.713 1.77.842.259.13.43.194.492.303.063.11.063.635-.158 1.259z" />
+        </svg>
+    </a>
+
+
+    <!-- WhatsApp Dialog (hidden until triggered) -->
+    <div id="whatsappDialog" class="whatsapp-dialog" role="dialog" aria-hidden="true" aria-labelledby="waDialogTitle">
+        <div class="whatsapp-dialog-inner" role="document">
+            <button id="waDialogClose" class="wa-close" aria-label="Close">&times;</button>
+            <h3 id="waDialogTitle">Chat with us on WhatsApp</h3>
+            <p class="wa-sub">Choose a topic or type a custom message — we'll get back soon.</p>
+
+            <div class="wa-suggestions">
+                <button class="wa-sug" data-key="general">General Inquiry</button>
+                <button class="wa-sug" data-key="partnership">Partnership</button>
+                <button class="wa-sug" data-key="project">Project Discussion</button>
+                <button class="wa-sug" data-key="support">Support</button>
+            </div>
+
+            <div class="wa-custom">
+                <label for="waMessage" class="sr-only">Your message</label>
+                <textarea id="waMessage" placeholder="Write your message (optional)" rows="3"></textarea>
+                <div class="wa-actions">
+                    <button id="waSendCustom" class="wa-btn wa-primary">Send</button>
+                    <button id="waClear" class="wa-btn wa-ghost">Clear</button>
+                </div>
+            </div>
+
+            <div class="wa-footer-note">By starting a chat you agree we may contact you on WhatsApp.</div>
+        </div>
+    </div>
+    <script>
+        (function () {
+            // ---------- CONFIG ----------
+            const whatsappNumber = "918483082810"; // <<=== your business number, no "+" prefix
+            // suggested messages mapping
+            const SUGGESTIONS = {
+                general: "Hello, I have a general inquiry about your services.",
+                partnership: "Hi — I'm interested in partnership opportunities. Can we discuss?",
+                project: "Hello — I'd like to discuss a project. Can we schedule a call?",
+                support: "Hi, I need support with an existing engagement / product."
+            };
+            const openInNewTab = true;
+
+            // ---------- ELEMENTS ----------
+            const floatBtn = document.getElementById('whatsappFloat');
+            const dialog = document.getElementById('whatsappDialog');
+            const closeBtn = document.getElementById('waDialogClose');
+            const sugButtons = Array.from(document.querySelectorAll('.wa-sug'));
+            const textArea = document.getElementById('waMessage');
+            const sendCustom = document.getElementById('waSendCustom');
+            const clearBtn = document.getElementById('waClear');
+
+            if (!floatBtn || !dialog) return;
+
+            // helper to build wa.me url with encoded message
+            function waUrl(message) {
+                const encoded = encodeURIComponent(message || '');
+                return `https://wa.me/${whatsappNumber}?text=${encoded}`;
+            }
+
+            // open dialog
+            function openDialog(ev) {
+                ev && ev.preventDefault();
+                dialog.setAttribute('aria-hidden', 'false');
+                // focus first suggestion for keyboard users
+                const first = dialog.querySelector('.wa-sug');
+                first && first.focus();
+            }
+
+            // close dialog
+            function closeDialog() {
+                dialog.setAttribute('aria-hidden', 'true');
+                // return focus to float button
+                floatBtn.focus();
+            }
+
+            // event: clicking suggestion
+            sugButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const key = btn.getAttribute('data-key');
+                    const message = SUGGESTIONS[key] || SUGGESTIONS['general'];
+                    const url = waUrl(message);
+                    if (openInNewTab) window.open(url, '_blank');
+                    else window.location.href = url;
+                    // close dialog
+                    closeDialog();
+                    console.log('[wa] suggested message sent:', key);
+                });
+            });
+
+            // event: send custom typed message
+            sendCustom && sendCustom.addEventListener('click', () => {
+                const msg = textArea.value?.trim();
+                if (!msg) {
+                    // if empty, send generic note
+                    const url = waUrl("Hello, I'd like to know more about your services.");
+                    openInNewTab ? window.open(url, '_blank') : window.location.href = url;
+                } else {
+                    const url = waUrl(msg);
+                    openInNewTab ? window.open(url, '_blank') : window.location.href = url;
+                }
+                closeDialog();
+            });
+
+            // clear button
+            clearBtn && clearBtn.addEventListener('click', () => { textArea.value = ''; textArea.focus(); });
+
+            // wire close
+            closeBtn && closeBtn.addEventListener('click', closeDialog);
+
+            // toggle open when clicking floating button
+            floatBtn.addEventListener('click', openDialog);
+
+            // keyboard: Esc closes
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && dialog.getAttribute('aria-hidden') === 'false') closeDialog();
+            });
+
+            // optionally hide button outside business hours (9am-7pm local)
+            // const hour = new Date().getHours(); if(hour < 9 || hour > 19) floatBtn.style.display='none';
+
+            // accessibility: trap focus inside dialog while open (basic)
+            dialog.addEventListener('keydown', function (e) {
+                if (e.key !== 'Tab') return;
+                const focusable = dialog.querySelectorAll('button, [href], textarea, [tabindex]:not([tabindex="-1"])');
+                if (!focusable.length) return;
+                const first = focusable[0], last = focusable[focusable.length - 1];
+                if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+                else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+            });
+
+        })();
+    </script>
+    <script>
+        (function () {
+            const headers = Array.from(document.querySelectorAll(".cap-domain-header"));
+            if (!headers.length) {
+                console.warn("[cap-panel] no .cap-domain-header elements found.");
+                return;
+            }
+
+            function collapseBlock(header) {
+                const content = header.nextElementSibling;
+                if (!content) return;
+                header.setAttribute("aria-expanded", "false");
+                // use setProperty with 'important' to override any stylesheet !important
+                content.style.setProperty("max-height", "0px", "important");
+                const chevron = header.querySelector(".chevron");
+                if (chevron) chevron.classList.remove("rotate-180");
+                header.classList.remove("is-open");
+            }
+
+            function expandBlock(header) {
+                const content = header.nextElementSibling;
+                if (!content) return;
+                header.setAttribute("aria-expanded", "true");
+                // set to scrollHeight + "px" and mark !important so stylesheet doesn't block it
+                const full = content.scrollHeight + "px";
+                content.style.setProperty("max-height", full, "important");
+                const chevron = header.querySelector(".chevron");
+                if (chevron) chevron.classList.add("rotate-180");
+                header.classList.add("is-open");
+            }
+
+            function toggleHandler(e) {
+                const header = e.currentTarget;
+                const expanded = header.getAttribute("aria-expanded") === "true";
+                if (expanded) collapseBlock(header); else expandBlock(header);
+            }
+
+            // attach
+            headers.forEach(h => {
+                if (!h.hasAttribute("aria-expanded")) h.setAttribute("aria-expanded", "false");
+                const content = h.nextElementSibling;
+                if (content) content.style.setProperty("max-height", "0px", "important");
+                h.addEventListener("click", toggleHandler);
+                h.addEventListener("keydown", (ev) => {
+                    if (ev.key === "Enter" || ev.key === " ") {
+                        ev.preventDefault();
+                        toggleHandler({ currentTarget: h });
+                    }
+                });
+            });
+
+            function initState() {
+                headers.forEach(h => collapseBlock(h));
+
+                // find first header containing "E-commerce" / "Ecommerce" or variants
+                const target = headers.find(h => {
+                    const text = (h.textContent || "").trim().toLowerCase();
+                    return text.includes("banking") || text.includes("financial");
+                });
+
+                if (target) {
+                    // expand that target after a tiny delay so DOM metrics settle
+                    setTimeout(() => expandBlock(target), 50);
+                    // ensure accurate max-height after images/fonts load
+                    setTimeout(() => {
+                        const content = target.nextElementSibling;
+                        if (content && target.getAttribute("aria-expanded") === "true") {
+                            content.style.setProperty("max-height", content.scrollHeight + "px", "important");
+                        }
+                    }, 220);
+                } else {
+                    // fallback: expand first header
+                    setTimeout(() => expandBlock(headers[0]), 50);
+                }
+            }
+
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", initState);
+            } else {
+                initState();
+            }
+
+            // keep expanded panels sized correctly on resize (debounced)
+            let t;
+            window.addEventListener("resize", () => {
+                clearTimeout(t);
+                t = setTimeout(() => {
+                    headers.forEach(h => {
+                        if (h.getAttribute("aria-expanded") === "true") {
+                            const content = h.nextElementSibling;
+                            if (content) content.style.setProperty("max-height", content.scrollHeight + "px", "important");
+                        }
+                    });
+                }, 120);
+            });
+        })();
+    </script>
+</body>
+
+</html>
