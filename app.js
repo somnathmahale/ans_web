@@ -589,7 +589,7 @@
             timeBar.style.animation = 'none';
             // force reflow
             void timeBar.offsetWidth;
-            timeBar.style.animation = `runningTime 3000ms linear 1 forwards`; // match your CSS duration
+            timeBar.style.animation = `runningTime 7000ms linear 1 forwards`; // match your CSS duration
         }
 
         // Wire prev/next
@@ -622,7 +622,7 @@
         function startAuto() {
             stopAuto();
             restartTimeBar();
-            autoplay = setInterval(() => { next(); }, 3000); // slightly longer than runningTime
+            autoplay = setInterval(() => { next(); }, 7000); // slightly longer than runningTime
         }
         function stopAuto() {
             if (autoplay) { clearInterval(autoplay); autoplay = null; }
