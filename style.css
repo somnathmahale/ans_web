@@ -154,6 +154,12 @@
     filter: blur(20px);
     opacity: 0;
     animation: showContent .5s 1s linear 1 forwards;
+
+}
+
+.carousel .list .item:nth-child(1) .content .des {
+    font-size: 1.5em;
+
 }
 
 @keyframes showContent {
